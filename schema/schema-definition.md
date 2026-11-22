@@ -4,6 +4,7 @@
 | type | name | constraints |
 |------------|------------|------------|
 | int | player_id | PK |
+| int | referred_by | FK -> Players(player_id) |
 | varchar | player_name | NOT NULL |
 
 Primary key: **player_id**
@@ -49,6 +50,7 @@ Primary key: **(match_id, mode_id)**
 erDiagram
     PLAYERS {
         int player_id PK
+        int referred_by FK
         varchar player_name
     }
     MATCHES {
@@ -72,6 +74,7 @@ erDiagram
         int mode_id "PK, FK"
     }
     PLAYERS ||--o{ MATCH_PARTICIPANTS : has
+    PLAYERS |o--o{ PLAYERS : "referred_by"
     MATCHES ||--o{ MATCH_PARTICIPANTS : "played at match"
     MATCHES ||--o{ MATCH_MODES : "played"
     GAME_MODES ||--o{ MATCH_MODES : "in mode"
