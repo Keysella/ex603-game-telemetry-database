@@ -67,6 +67,21 @@ Finding: [analysis/unit3-finding.md](analysis/unit3-finding.md).
 
 Analysis: [analysis/unit4.md](analysis/unit4.md). Finding: [analysis/unit4-finding.md](analysis/unit4-finding.md).
 
+### Unit 5
+
+| Query | File | Business question |
+|---|---|---|
+| 5.1-1 | [q5_1.sql](queries/unit5/q5_1.sql) | Which players took part in the flagged matches 2, 3 and 4, and when? |
+| 5.1-2 | [q5_1.sql](queries/unit5/q5_1.sql) | Which game modes do the flagged matches use? |
+| 5.1-3 | [q5_1.sql](queries/unit5/q5_1.sql) | How do the flagged matches compare with other matches in the same region? |
+| 5.2A | [q5_2.sql](queries/unit5/q5_2.sql) | Which matches does an INNER JOIN hide, compared with a LEFT JOIN? |
+| 5.2B | [q5_2.sql](queries/unit5/q5_2.sql) | Do RIGHT JOIN and FULL OUTER JOIN show the same picture, and are there events without a match? |
+| 5.2C | [q5_2.sql](queries/unit5/q5_2.sql) | Which matches have never had an event? (NOT EXISTS and EXCEPT) |
+| 5.3A | [q5_3.sql](queries/unit5/q5_3.sql) | How many rows does a CROSS JOIN of matches and game modes produce? |
+| 5.3B | [q5_3.sql](queries/unit5/q5_3.sql) | How does PostgreSQL execute the three-table join? (EXPLAIN ANALYZE) |
+
+Analysis: [analysis/unit5.md](analysis/unit5.md). Finding: [analysis/unit5-finding.md](analysis/unit5-finding.md).
+
 ## Entity Relationship Diagram
 
 ![Game Telemetry ERD](schema/erd.png)
